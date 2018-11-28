@@ -1,0 +1,11 @@
+*{
+  color:darkorange;
+}
+div{
+  width:80%;
+  margin:0 auto;
+  margin-top:20px;
+  padding:20px;
+  text-align:center;
+  border:1px solid turquoise;
+}

@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <!--
     Data: 28/11/2018
+    01:40
+-->
+
+
+
+<!DOCTYPE html>
+<!--
+    Data: 28/11/2018
     01:00
 -->
 <html>
@@ -16,19 +24,22 @@
         <!-- estilo css -->
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-        <div id="apli">
-            {{mensagem}}
-        </div>
+
+    <div id="app-2">
+        <span v-bind:title="message">
+            Pare o mouse sobre este texto para ver uma frase dinamicamente
+        </span>
+    </div>
 
 
-        <script>
-            var apli = new Vue({
-                el: "#apli",
-                data: {
-                    mensagem: "Primeiro app Vue"
-                }
-            });
-        </script>
-    </body>
+    <script>
+        var app2 = new Vue({
+            el: '#app-2',
+            data: {
+                message: 'Você carregou esta página em ' + new Date().toLocaleString()
+            }
+        })
+    </script>
+
+</body>
 </html>
