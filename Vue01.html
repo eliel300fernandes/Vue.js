@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+    Data: 28/11/2018
+    01:00
+-->
+<html>
+    <head>
+        <title>Primeiro App Vue</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- versão de produção, otimizada para tamanho e velocidade -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>    </head>
+    <body>
+        <div id="apli">
+            {{mensagem}}
+        </div>
+
+
+        <script>
+            var apli = new Vue({
+               el: "#apli",
+               data:{
+                   mensagem: "Primeiro app Vue"
+               }
+            });
+        </script>
+    </body>
+</html>
